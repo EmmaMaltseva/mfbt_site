@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+          $('#toTop').fadeIn();
+        } else {
+          $('#toTop').fadeOut();
+        } 
+      }); 
+      $('#toTop').click(function() {  
+        $('body,html').animate({scrollTop:0},800); 
+      }); 
+    });
+  </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Move Fast and Break Things</title>
+    <script src="app.js" defer></script>
+</head>
+<div ID = "toTop" ></div>
+<body>
+    <header id="header" class="header"> 
+        <div class="container">
+          <div class="nav">
+            <img class="logo" src="img/logo.svg" alt="MFBT">
+            <div class="menu">
+              <ul class="menu__list">
+                <li>
+                  <a class="menu_link" href="#">community</a>
+                </li>
+                <li>
+                  <a class="menu_link" href="#projects">projects</a>
+                </li>
+                <li>
+                  <a class="menu_link" href="#creators">contacts</a>
+                </li>
+              </ul>
+            </div>
+            <button class="menu__burger">
+              <img src="img/burger.svg" alt="Open menu">
+            </button>
+          </div>
+          
+          <div class="main_description">
+            <h1>
+                MOVE FAST AND<br>BREAK THINGS
+            </h1>
+            <p>We community of software engineers and product builders originally created for KubSAU students</p>
+          </div>
+
+          <div class="line_3d">
+            <img src="img/3d_line.png" alt="">
+          </div>
+        </div>
+      </header>
+
+
+      <section id="projects" class="projects"> 
+        <img class="circle_bac" src="img/circle-bac.svg" alt="">
+        <img class="line_bac" src="" alt="">
+        <div class="container">
+          <h2>Projects</h2>
+          <div id="projects_items" class="projects_items">
+            <div class="projects_item minerva">
+              <div class="desc-left">
+                <h3>Minerva</h3>
+                <p class="projects_description">
+                  Minerva is a GPT-powered Discord bot built 
+                  to help students learn software development
+                </p>
+                <a href="https://github.com/move-fast-and-break-things/minerva" class="see_arrow">
+                  <p class="see_more">See more 
+                  </p>
+                  <img src="img/arrow.svg" alt="">
+                </a>
+              </div>
+              <div class="desc-right">
+                <img src="img/minerva-pr.png" alt="">
+              </div>          
+            </div>
+
+            <hr size=3px width=100% color="#3D4250">
+            <div class="projects_item comsetic_bot">
+              <div class="desc-left">
+                <h3>Cosmetic helper bot</h3>
+                <p class="projects_description">
+                  This is a bot that helps men in the 
+                  most difficult moments. The bot 
+                  recognizes the girl's cosmetics
+                </p>
+                <a href="https://github.com/move-fast-and-break-things/cosmetic-helper-bot" class="see_arrow">
+                  <p class="see_more">See more 
+                  </p>
+                  <img src="img/arrow.svg" alt="">
+                </a>
+              </div>
+              <div class="desc-right">
+                <img src="img/cosmetic-bot-pr.png" alt="">
+              </div>           
+            </div>
+
+            <hr size=3px width=100% color="#3D4250">
+            <div class="projects_item the_list">
+              <div class="desc-left">
+                <h3>The List</h3>
+                <p class="projects_description">
+                  The application is an assistant to the headman 
+                  to mark the presence of students in the class.
+                </p>
+                <a href="https://github.com/move-fast-and-break-things/the-list" class="see_arrow">
+                  <p class="see_more">See more 
+                  </p>
+                  <img src="img/arrow.svg" alt="">
+                </a>
+              </div>
+              <div class="desc-right">
+                <img src="img/the-list-pr.png" alt="">
+              </div>           
+            </div>
+
+            <hr size=3px width=100% color="#3D4250">
+            <div class="projects_item emoji_translator">
+              <div class="desc-left">
+                <h3>Emoji Translator</h3>
+                <p class="projects_description">
+                  The translator helps to find out the mood level of the 
+                  interlocutor by the emoticons that he sends.
+                </p>
+                <a href="https://github.com/move-fast-and-break-things/rn-emoji-translator-demo" class="see_arrow">
+                  <p class="see_more">See more 
+                  </p>
+                  <img src="img/arrow.svg" alt="">
+                </a>
+              </div>
+              <div class="desc-right">
+                <img src="img/the-list-pr.png" alt="">
+              </div>           
+            </div>
+
+            <hr size=3px width=100% color="#3D4250">
+            <div class="projects_item emoji_translator">
+              <div class="desc-left">
+                <h3>Dr Stone Character Classifier</h3>
+                <p class="projects_description">
+                  The classifier of Dr. Stone's characters. 
+                  Using the fastai library and Binder.
+                </p>
+                <a href="https://github.com/move-fast-and-break-things/rn-emoji-translator-demo" class="see_arrow">
+                  <p class="see_more">See more 
+                  </p>
+                  <img src="img/arrow.svg" alt="">
+                </a>
+              </div>
+              <div class="desc-right">
+                <img src="img/the-list-pr.png" alt="">
+              </div>           
+            </div>
+
+            <hr size=3px width=100% color="#3D4250" class="line_hr">
+            <div class="projects_item music_recommender load_more">
+              <div class="desc-left">
+                <h3>Music Recommender</h3>
+                <p class="projects_description">
+                  The classifier of Dr. Stone's characters. 
+                  Using the fastai library and Binder.
+                </p>
+                <a href="https://github.com/move-fast-and-break-things/rn-emoji-translator-demo" class="see_arrow">
+                  <p class="see_more">See more 
+                  </p>
+                  <img src="img/arrow.svg" alt="">
+                </a>
+              </div>
+              <div class="desc-right">
+                <img src="img/the-list-pr.png" alt="">
+              </div>           
+            </div>
+
+            <hr size=3px width=100% color="#3D4250" class="line_hr">
+            <div class="projects_item music_recommender load_more">
+              <div class="desc-left">
+                <h3>Music Recommender</h3>
+                <p class="projects_description">
+                  The classifier of Dr. Stone's characters. 
+                  Using the fastai library and Binder.
+                </p>
+                <a href="https://github.com/move-fast-and-break-things/rn-emoji-translator-demo" class="see_arrow">
+                  <p class="see_more">See more 
+                  </p>
+                  <img src="img/arrow.svg" alt="">
+                </a>
+              </div>
+              <div class="desc-right">
+                <img src="img/gh_img.png" alt="">
+              </div>           
+            </div>
+
+            <button id="load-more-button" class="more_pr" onclick="loadMore()">Load More</button>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="creators" class="creators">
+        <div class="container">
+          <h2>Creators</h2>
+          <div class="persons">
+            <div class="person">
+              <div class="name_and_img">
+                <img src="img/yurij.png" alt="">
+                <p class="person_name">Yurij Mikhalevich</p>
+              </div>
+              <p class="about_person">Building the future at @Lightning-AI 🚀</p>
+            </div>
+            <div class="person">
+              <div class="name_and_img">
+                <img src="img/irina.png" alt="">
+                <p class="person_name">Irina Kogay</p>
+              </div>
+              <p class="about_person">Software Engineer</p>
+            </div>
+            <div class="person">
+              <div class="name_and_img">
+                <img src="img/danil.png" alt="">
+                <p class="person_name">Danil Ostaptsov </p>
+              </div>
+              <p class="about_person">KubSAU student, 
+                junior Django developer, Move Fast 
+                and Breake Things participant</p>
+            </div>
+            <div class="person">
+              <div class="name_and_img">
+                <img src="img/emma.png" alt="">
+                <p class="person_name">Emma Maltseva</p>
+              </div>
+              <p class="about_person">
+                Frontend-developer
+                and student KubSAU
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="github_container">
+            <img class="logo" src="img/logo.svg" alt="MFBT">
+            <a class="github" href="https://github.com/move-fast-and-break-things">
+              <img src="img/github.png" alt="">
+            </a>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
