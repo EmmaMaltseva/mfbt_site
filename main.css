@@ -13,6 +13,14 @@
 	font-size:11px;
 }
 
+.open {
+	display: flex !important;
+}
+
+.open_header {
+	padding-bottom: 100vh !important;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -78,7 +86,7 @@ h3 {
 }
 
 .header {
-	padding-bottom: 170px;
+	padding-bottom: 235px;
 }
 
 
@@ -204,7 +212,7 @@ ul, li {
 }
 
 .projects {
-	padding-top: 70px;
+	padding-top: 120px;
 }
 
 .projects_items {
@@ -300,7 +308,7 @@ hr {
 }
 
 .creators {
-	margin-top: 80px;
+	padding-top: 120px;
 }
 
 .star {
@@ -315,7 +323,8 @@ hr {
 }
 
 .person {
-	width: 200px;
+	margin-top: 20px;
+	width: 300px;
 }
 
 .name_and_img {
@@ -404,41 +413,33 @@ footer {
 	h2 {
 		font-size: 25px;
 	}
-	
+
 	h3 {
 		font-size: 30px;
 	}
 
 	.header_menu {
-		padding: 10px 50px;
 		background: none;
 		justify-content: space-between;
+		border-radius: 0px;
+		top: 0px;
 		width: 100%;
-		top: 30px;
+		padding-bottom: 0vh;
+		top: 0px;
+		padding-top: 30px;
 	}
 
 	.burger {
 		display: flex;
+		z-index: 55;
 	}
 
-	.header_menu {
-		display: flex;
-	
-		/*центрирование меню по середине */
-		left: 50%;
-		transform: translateX(-50%);
-		padding: 10px 50px;
-		align-items: center; 
-		border-radius: 40px;
-		background: rgba(121, 127, 143);
-		overflow: hidden;
-		position: fixed;
-		top: 10px;
-		z-index: 50;
-	}
+	.logo {
+		z-index: 55;
+	} 
 
 	.nav {
-		display: flex;
+		display: none;
 		flex-direction: column;
 		position: fixed;
 		height: 100%;
@@ -446,32 +447,29 @@ footer {
 		top: 0; bottom: 0; left: 0; right: 0;
 		z-index: 50;
 		overflow-y:auto;
-		background-color: #3D4250;
+		padding: 80px 50px;
+		background-color: #1A1C29;
+		animation: burgerAnimation 0.4s;
 	}
 	
 	.nav ul {
 		flex-direction: column;
-		row-gap: 30px;
+		margin-top: 50px;
 	}
 
-	.menu {
-		display: flex;
-		flex-direction: column;
-		position: fixed;
-		height: 100vh;
-		width: 100%;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		z-index: 5;
-		overflow: auto;
-		padding: 50px 40px;
-		background-color: #1A1C29;
+	.nav ul li {
+		border-bottom: solid #3D4250;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.nav ul li a {
+		font-size: 25px;
+		text-transform: uppercase;
 	}
 
 	.line_3d {
-		top: 300px;
+		top: 330px;
 
 	}
 	
@@ -491,9 +489,11 @@ footer {
 	}
 
 	.header {
-		padding-bottom: 328px;
+		padding-bottom: 275px;
 	}
-
+	.projects {
+    padding-top: 190px;
+	}
 	.desc-left {
 		width: 70%;
 	}
@@ -504,6 +504,7 @@ footer {
 	}
 
 	.person {
+		width: 200px;
 		margin-top: 20px;
 	}
 	
@@ -525,7 +526,12 @@ footer {
   @media screen and (max-width: 575px) {
 	.container {
 	  width: 100%;
-	  padding: 0 25px;
+	  padding: 0 30px;
+	}
+
+	.header_menu {
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 
 	.nav {
@@ -570,3 +576,8 @@ footer {
 
   }
 
+	@keyframes burgerAnimation {
+		from {opacity: 0}
+		to {opacity: 1}
+	}
+	
